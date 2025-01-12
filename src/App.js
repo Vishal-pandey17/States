@@ -43,9 +43,10 @@ function States() {
   },[selectedState, selectedCountry]);
 
   const handleChangeCity = (e) => {
-    setSelectedCity(e.target.value);
+    const city = e.target.value;
+    setSelectedCity(city);
     
-    setMessege(`You selected ${selectedCity}, ${selectedState}, ${selectedCountry}`);
+    setMessege(`You selected ${city}, ${selectedState}, ${selectedCountry}`);
 
 
   }
